@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <script src="https://kit.fontawesome.com/2e740f7b92.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Form Validation</title>
 </head>
@@ -12,24 +13,27 @@
     <div class="containier">
         <form action="" class="myform" autocomplete="off">
             <h1>Simple Javascript Form Validation</h1>
-                <div class="input-group">
-                    <label>Email<span>Enter a valid email</span></label>
-                    <input type="email" class="input-field" name="email">
-                    <small class="error"></small>
-                </div>
-                <div class="input-group">
-                    <label>Firstname</label>
-                    <input type="text" class="input-field" name="fname">
-                    <small class="error"></small>
-                </div>
-                <div class="input-group">
-                    <label>Lastname</label>
-                    <input type="text" class="input-field" name="lname">
-                    <small class="error"></small>
-                </div>
-                <div class="input-group">
-                    <input type="submit" value="submit">
-                </div>
+            <label>Email<span>Enter a valid email</span></label>
+            <div class="input-group">
+                <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" class="input-field" name="email">
+                <small class="error"></small>
+            </div>
+            <label>Firstname</label>
+            <div class="input-group">
+                <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+                <input type="text" class="input-field" name="fname">
+                <small class="error"></small>
+            </div>
+            <label>Lastname</label>
+            <div class="input-group">
+                <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+                <input type="text" class="input-field" name="lname">
+                <small class="error"></small>
+            </div>
+            <div class="input-group">
+                <input type="submit" value="submit">
+            </div>
         </form>
     </div>
     <script src="app.js"></script>
