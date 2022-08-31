@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Form Validation</title>
 </head>
 <body>
+    <div class="containier">
+        <form action="" class="myform" autocomplete="off">
+            <h1>Simple Javascript Form Validation</h1>
+                <div class="input-group">
+                    <label>Email<span>Enter a valid email</span></label>
+                    <input type="email" class="input-field" name="email">
+                    <small class="error"></small>
+                </div>
+                <div class="input-group">
+                    <label>Firstname</label>
+                    <input type="text" class="input-field" name="fname">
+                    <small class="error"></small>
+                </div>
+                <div class="input-group">
+                    <label>Lastname</label>
+                    <input type="text" class="input-field" name="lname">
+                    <small class="error"></small>
+                </div>
+                <div class="input-group">
+                    <input type="submit" value="submit">
+                </div>
+        </form>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
