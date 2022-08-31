@@ -1,1 +1,1 @@
-# js-form-validation
+# javascript-form-validation
