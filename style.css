@@ -17,7 +17,7 @@ body{
 }
 
 .containier{
-    background-color: rgba(27, 27, 27, 0.5);
+    background-color: rgba(36, 36, 36, 0.7);
     padding: 50px;
     border-radius: 10px;
 }
@@ -32,24 +32,71 @@ form h1{
     margin-bottom: 3rem;
 }
 .input-group{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 90%;
     font-size: 20px;
     margin-bottom: 10px;
+    position: relative;
 }
 .input-field{
     width: 100%;
-    border-radius: 10px;
-    border: none;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    outline: none;
     font-size: 20px;
     padding: 10px;
+    padding-left: 60px;
+    transition: .3s;
+}
+.input-field:focus{
+    border-color: rgb(1, 175, 255);
+    box-shadow: 0 0 9px 0 rgb(1, 175, 255);
+}
+
+.input-field:focus + .input-icon{
+    color: #fff;
+    background-color: rgb(1, 175, 255);
 }
 .input-icon{
-    background-color: white;
-    color: black;
-    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    padding: 12px 15px;
+    background-color: #aaa;
+    transition: .3s;
+    border-radius: 5px 0 0 5px;
+}
+.fa-circle-check{
+    position: absolute;
+    right: 0;
+    padding: 14px 12px;
+    color: rgb(0, 250, 83);
+    visibility: hidden;
+}
+.fa-circle-xmark{
+    position: absolute;
+    right: 0;
+    padding: 14px 12px;
+    color: rgb(250, 50, 0);
+    visibility: hidden;
+}
+.error{
+    /*position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 14px 20px;
+    padding-left: 60px;*/
+    color: rgb(245, 78, 78);
+    visibility: hidden;
+}
+.show-error{
+    visibility: visible;
+}
+.input-error{
+    border: 2px solid rgb(250, 50, 0);
+    box-shadow: 0 0 9px 0 rgb(250, 50, 0);
+}
+.show-success{
+    visibility: visible;
 }
 label{
     display: flex;
@@ -59,11 +106,13 @@ input[type="submit"]{
     height: 2.5rem;
     color: white;
     text-transform: uppercase;
-    background-color: rgba(10, 7, 212, .8);
+    background-color: rgba(1, 175, 255, 0.8);
     border: none;
     border-radius: 10px;
     margin-top: 20px;
+    width: 100%;
 }
 input[type="submit"]:hover{
-    background-color: rgb(10, 7, 212);
+    cursor: pointer;
+    background-color: rgb(1, 175, 255);
 }
