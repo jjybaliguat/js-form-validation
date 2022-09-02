@@ -11,31 +11,35 @@
 </head>
 <body>
     <div class="containier">
-        <form action="" class="myform" autocomplete="off">
+        <form action="" name="myform" autocomplete="off">
             <h1>Simple Javascript Form Validation</h1>
-            <label>Email<span>Enter a valid email</span></label>
             <div class="input-group">
-                <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+                <label>Email<span><small class="error email-error"></small></span></label>
+                <i class="fa-regular fa-circle-xmark email-x"></i>
+                <i class="fa-regular fa-circle-check email-check"></i>
                 <input type="email" class="input-field" name="email">
-                <small class="error"></small>
+                <i class="fa-solid fa-envelope input-icon" aria-hidden="true"></i>
             </div>
-            <label>Firstname</label>
             <div class="input-group">
-                <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+                <label>Firstname <span><small class="error fname-error"></small></span></label>
+                <i class="fa-regular fa-circle-xmark fname-x"></i>
+                <i class="fa-regular fa-circle-check fname-check"></i>
                 <input type="text" class="input-field" name="fname">
-                <small class="error"></small>
+                <i class="fa-solid fa-user input-icon" aria-hidden="true"></i>
             </div>
-            <label>Lastname</label>
             <div class="input-group">
-                <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+                <label>Lastname <span><small class="error lname-error"></small></span></label>
+                <i class="fa-regular fa-circle-xmark lname-x"></i>
+                <i class="fa-regular fa-circle-check lname-check"></i>
                 <input type="text" class="input-field" name="lname">
-                <small class="error"></small>
+                <i class="fa-solid fa-user input-icon" aria-hidden="true"></i>
             </div>
-            <label>Contact</label>
             <div class="input-group">
-                <span class="input-icon"><i class="fa-solid fa-user"></i></span>
-                <input type="text" class="input-field" name="contact">
-                <small class="error"></small>
+                <label>Contact <span><small class="error contact-error"></small></span></label>
+                <i class="fa-regular fa-circle-xmark contact-x"></i>
+                <i class="fa-regular fa-circle-check contact-check"></i>
+                <input type="number" class="input-field" name="contact">
+                <i class="fa-solid fa-phone input-icon" aria-hidden="true"></i>
             </div>
             <div class="input-group">
                 <input type="submit" value="submit">
