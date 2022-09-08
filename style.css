@@ -45,6 +45,7 @@ form h1{
     font-size: 20px;
     padding: 10px;
     padding-left: 60px;
+    padding-right: 35px;
     transition: .3s;
 }
 .input-field:focus{
@@ -115,4 +116,34 @@ input[type="submit"]{
 input[type="submit"]:hover{
     cursor: pointer;
     background-color: rgb(1, 175, 255);
+}
+
+@media screen and (max-width: 630px) {
+
+    form h1{
+        font-size: 20px;
+    }
+    .input-field{
+        font-size: 15px;
+        height: 2rem;
+    }
+    .input-group{
+        font-size: 15px;
+    }
+    input[type="submit"]{
+        height: 30px;
+    }
+
+    .input-icon{
+        padding: 7px 8px;
+    }
+    
+    .fa-circle-check{
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+    .fa-circle-xmark{
+        padding: 10px 8px;
+        font-size: 12px;
+    }
 }
