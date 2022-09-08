@@ -126,6 +126,7 @@ input[type="submit"]:hover{
     .input-field{
         font-size: 15px;
         height: 2rem;
+        padding-left: 35px;
     }
     .input-group{
         font-size: 15px;

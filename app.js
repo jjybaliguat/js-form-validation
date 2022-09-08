@@ -6,11 +6,8 @@ form.addEventListener('submit', e => {
 	validateForm();
 });
 
-let errorMess = ""
-let targetError = ""
-let iconError = ""
-let iconSuccess = ""
-let inputname = ""
+let errorMess, targetError, iconError, iconSuccess, 
+inputname = ""
 
 function showError(inputname, targetError, iconError, iconSuccess, errorMess){
 	form[inputname].classList.add('input-error')
